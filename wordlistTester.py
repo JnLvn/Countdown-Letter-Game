@@ -1,9 +1,11 @@
 # Test the wordlist
+# Script from https://github.com/YesManKablam/CountdownConundrumSolver/blob/master/solver.py
 
 # Opens dictionary file.
 # Wordlist from https://github.com/dwyl/english-words/blob/master/words2.txt
-with open('wordlist.txt', 'r') as fileopen:
+with open('dictionary.txt', 'r') as fileopen:
     words = [line.strip() for line in fileopen]
+
 
 # Takes input from console to use as the anagram.
 testInput = input('Enter word: ')
