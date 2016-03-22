@@ -2,9 +2,10 @@
 #### G00192754
 
 # Countdown Letters Game Solver
-Insert introduction here.
-This gist is just an example of how you might layout your submission.
-Please change it to suit your needs.
+A Python script to solve the Countdown Letters Game. 
+
+The Countdown Letters Game consists of 9 randomly selected letters (at least 3 vowels and 4 consonants). The letters must be arranged to form the longest word possible. The length of the word determines the number of points earned, e.g. chair = 5 points. If a 9 letter word is constructed the contestant receives double points (18 points) for the round.  
+
 
 ## Background
 The first task I completed as part of this project was to Google "countdown letters game solver".
