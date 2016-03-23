@@ -8,18 +8,19 @@ The Countdown Letters Game consists of 9 randomly selected letters (at least 3 v
 
 
 ## Background
+[solver.py][4] file.
 The first task I completed was to test my word list. A simple search for a word in my dictionary file. 
-I used a script I got online at [wordlistTester][1]
-
-My next step was to research Python’s built in iterator module [itertools][2]. This is where I learned of the permutations function: 
+I used a script I got online at [wordlistTester][1]. 
+My next step was to research Python’s built in iterator module [itertools][2]. This is where I learned of the permutations function:
 ```python
 from itertools import permutations
 ```
-
 Next step was to compare my list of permutations to actual words from my dictionary file. This was achieved using Python’s [intersection][3] method: 
 ```python
 result = [set(words).intersection(perms)]
 ```
+On completion I was getting an average time of 0.9 seconds. I realised there were definitely faster ways of comparing anagrams and dictionary words. I began researching different ways to develop a function to check if a word was present in an anagram. This lead to my discovery of [STEALTHCOPTER Blog][5]. I developed [solver3.py][6] from this blog. Solver3.py is the python script which solves the Countdown Letters Game in the quickest time. 
+
 
 
 
@@ -59,3 +60,7 @@ My script runs very quickly, and certainly within the 30 seconds allowed in the 
 [1]: https://github.com/YesManKablam/CountdownConundrumSolver/blob/master/solver.py
 [2]: https://docs.python.org/2/library/itertools.html 
 [3]: http://stackoverflow.com/questions/1388818/how-can-i-compare-two-lists-in-python-and-return-matches
+[4]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/solver.py
+[5]: http://www.stealthcopter.com/blog/2009/11/python-anagram-solver/
+[6]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/solver3.py
+
