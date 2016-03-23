@@ -9,6 +9,7 @@ The Countdown Letters Game consists of 9 randomly selected letters (at least 3 v
 
 ## Background
 [solver.py][4] file.
+
 The first task I completed was to test my word list. A simple search for a word in my dictionary file. 
 I used a script I got online at [wordlistTester][1]. 
 My next step was to research Python’s built in iterator module [itertools][2]. This is where I learned of the permutations function:
