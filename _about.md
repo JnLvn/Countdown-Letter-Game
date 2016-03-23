@@ -49,7 +49,7 @@ This function checks if a given word is an anagram of another word. Takes two st
 
 
 ## Preprocessing
-My script does a lot of preprocessing, which only needs to be run once.
+The only preprocessing involved is the parsing of the dictionary file and the removal of any extra space at the end of each line with line.strip().
 Once the preprocessing is done we can run the game solver again and again without that overhead.
 
 ## Efficiency
