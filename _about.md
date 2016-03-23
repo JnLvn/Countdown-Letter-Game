@@ -26,8 +26,10 @@ On completion I was getting an average time of 0.9 seconds. I realised there wer
 
 
 ## Words list
-My words list is in the file [wordslist.txt](wordslist.txt) in this repoistory/gist.
-I got my words list from the [Oxford Learner's Dictionaries][1] website.
+I found a pretty decent words list at this [GitHub][7] Repository. Only problem was it contained both upper and lower-case letters. I created a small script [convertToLowercase.py][8] to rectify this problem. Next I went about sorting the dictionary starting with the longest length at the top. Words with more than 9 letters were removed as the Countdown game only allows 9 letters. I used the [sortedDictionary.py][9] script to achieve this. This sorted dictionary improved the algorithms speed greatly. 
+
+Evolution of word list : [wordlist.txt][10] -> [dictionary.txt][11] -> [sortedDic.txt][12]
+
 
 ## Python script
 My script is in the files [solver.py](solver.py) in this repository and it works as follows.
@@ -64,4 +66,11 @@ My script runs very quickly, and certainly within the 30 seconds allowed in the 
 [4]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/solver.py
 [5]: http://www.stealthcopter.com/blog/2009/11/python-anagram-solver/
 [6]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/solver3.py
+[7]: https://github.com/dwyl/english-words/blob/master/words2.txt
+[8]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/convertToLowercase.py
+[9]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/sortedDictionary.py
+[10]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/wordlist.txt
+[11]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/dictionary.txt
+[12]: https://github.com/JnLvn/Countdown-Letter-Game/blob/master/sortedDic.txt
+
 
