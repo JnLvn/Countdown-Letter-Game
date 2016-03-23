@@ -58,4 +58,4 @@ My script runs very quickly, and certainly within the 30 seconds allowed in the 
 ## References
 [1]: https://github.com/YesManKablam/CountdownConundrumSolver/blob/master/solver.py
 [2]: https://docs.python.org/2/library/itertools.html 
-[3]: http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/
+[3]: http://stackoverflow.com/questions/1388818/how-can-i-compare-two-lists-in-python-and-return-matches
