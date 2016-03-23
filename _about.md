@@ -11,6 +11,12 @@ The Countdown Letters Game consists of 9 randomly selected letters (at least 3 v
 The first task I completed was to test my word list. A simple search for a word in my dictionary file. 
 I used a script I got online at [wordlistTester][1]
 
+My next step was to research Python’s built in iterator module [itertools][2]. This is where I learned of the permutations function: 
+```python
+from itertools import permutations
+```
+
+
 
 ## Words list
 My words list is in the file [wordslist.txt](wordslist.txt) in this repoistory/gist.
@@ -46,5 +52,5 @@ My script runs very quickly, and certainly within the 30 seconds allowed in the 
 
 ## References
 [1]: https://github.com/YesManKablam/CountdownConundrumSolver/blob/master/solver.py
-[2]: http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/
+[2]: https://docs.python.org/2/library/itertools.html 
 [3]: http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/
