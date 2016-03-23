@@ -32,21 +32,21 @@ Evolution of word list : [wordlist.txt][10] -> [dictionary.txt][11] -> [sortedDi
 
 
 ## Python script
-My script is in the files [solver.py](solver.py) in this repository and it works as follows.
+My main script is [solver3.py][6]. My first attempt which turned out to be too slow can be found at [solver.py][4]. 
+
 The most important section is:
 
 ```python
-import random
-print(random.shuffle("My code is cool."))
+def anagramCheck(word,checkword):  
+    for letter in word:  
+        if letter in checkword:  
+            checkword=checkword.replace(letter, '', 1)  
+        else:  
+            return 0  
+    return 1  
 ```
+This function checks if a given word is an anagram of another word. Takes two string inputs (dictionary word, anagram). Loops through every letter in word, checks against checkword. If letter is present in checkword, removes from checkword so it can't be used again.
 
-Previously it looks like this:
-```python
-# Note that the following snippet of code was adapted from
-# the Stack Overflow post available here: http://www.so.com/post/123
-import nothing
-```
-That didn't work too well, so I changed it.
 
 ## Preprocessing
 My script does a lot of preprocessing, which only needs to be run once.
