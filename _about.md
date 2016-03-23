@@ -16,6 +16,11 @@ My next step was to research Python’s built in iterator module [itertools][2].
 from itertools import permutations
 ```
 
+Next step was to compare my list of permutations to actual words from my dictionary file. This was achieved using Python’s [intersection][3] method: 
+```python
+result = [set(words).intersection(perms)]
+```
+
 
 
 ## Words list
