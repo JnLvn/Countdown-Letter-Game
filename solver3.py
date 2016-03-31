@@ -51,6 +51,7 @@ for line in f:
         if anagramCheck(line,a):
             print (i , ":", line)
             i += 1
+            break
              
 f.close() 
 
