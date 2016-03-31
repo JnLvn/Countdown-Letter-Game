@@ -52,11 +52,17 @@ This function checks if a given word is an anagram of another word. Takes two st
 The only preprocessing involved is the parsing of the dictionary file and the removal of any extra space at the end of each line with line.strip().
 Once the preprocessing is done we can run the game solver again and again without that overhead.
 
-## Efficiency
-Here's some stuff about how efficient my code is, including an analysis of how many calculations my algorithm requires.
+
 
 ## Results
-My script runs very quickly, and certainly within the 30 seconds allowed in the Coutdown letters game.
+All results are taken on an average of running the script 20 times.
+
+The script runs at 0.4112 seconds when it is first executed. This slow time is down to the preprocessing. After the initial preprocessing the script runs at 0.2496 seconds on average. With some of the fastest times at 0.2091 seconds. This is due to a smaller list of anagrams returned with only 48 words. Slower times of 0.4313 were found when larger lists of 400 plus words were returned.
+
+To increase the speed of the script I decided to limit the number of words returned to just the top result (longest word). This greatly improved the speed with an average of 0.1841 seconds achieved. The fact that it no longer had to search the entire dictionary for every match cut the time in half. 
+
+One of the fastest times I found was 0.10009. This was with the word “friended”. This fast time can be attributed to the way I have the dictionary sorted (longest words to the top).
+
 
 
 ## References
